@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <device id="ipad10_5" orientation="landscape" layout="fullscreen" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -12,11 +12,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Zodiaco" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1112" height="834"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleAspectFit" ambiguous="YES" axis="vertical" distribution="equalCentering" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="TDg-sq-LC8">
-                                <rect key="frame" x="65.5" y="55" width="244.5" height="105.5"/>
+                            <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="equalCentering" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="TDg-sq-LC8">
+                                <rect key="frame" x="426" y="8" width="244.5" height="105.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Escribe tu fecha de cumpleaños" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O9e-CE-r86">
                                         <rect key="frame" x="0.0" y="0.0" width="244.5" height="21"/>
@@ -74,34 +74,34 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="farola" translatesAutoresizingMaskIntoConstraints="NO" id="jXE-dH-zX2">
-                                <rect key="frame" x="0.0" y="168" width="375" height="499"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="farola" translatesAutoresizingMaskIntoConstraints="NO" id="jXE-dH-zX2">
+                                <rect key="frame" x="8" y="121.5" width="1096" height="688"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="jXE-dH-zX2" secondAttribute="height" multiplier="611:619" id="leN-uW-ufe"/>
+                                    <constraint firstAttribute="width" secondItem="jXE-dH-zX2" secondAttribute="height" constant="407.95638126009692" id="leN-uW-ufe"/>
                                 </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="leading" secondItem="jXE-dH-zX2" secondAttribute="leading" id="5vq-Nm-gx4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="leading" secondItem="jXE-dH-zX2" secondAttribute="leading" constant="-8" id="5vq-Nm-gx4"/>
                             <constraint firstItem="jXE-dH-zX2" firstAttribute="top" secondItem="TDg-sq-LC8" secondAttribute="bottom" constant="8" id="OUt-3V-xte"/>
-                            <constraint firstItem="jXE-dH-zX2" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="bxQ-pm-BQy"/>
-                            <constraint firstItem="TDg-sq-LC8" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="iLE-N7-cRc"/>
-                            <constraint firstItem="jXE-dH-zX2" firstAttribute="centerX" secondItem="TDg-sq-LC8" secondAttribute="centerX" id="tB9-rP-Ewp"/>
+                            <constraint firstItem="TDg-sq-LC8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="XWI-ro-s83"/>
+                            <constraint firstItem="jXE-dH-zX2" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="-8" id="bxQ-pm-BQy"/>
+                            <constraint firstItem="jXE-dH-zX2" firstAttribute="centerX" secondItem="TDg-sq-LC8" secondAttribute="centerX" constant="8" id="tB9-rP-Ewp"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="306.39999999999998" y="102.99850074962519"/>
+            <point key="canvasLocation" x="305.93525179856118" y="102.87769784172663"/>
         </scene>
         <!--Item 2-->
         <scene sceneID="cG8-v6-Eeq">
             <objects>
                 <viewController id="9eA-Q2-g7m" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6IR-zp-2Hl">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <rect key="frame" x="0.0" y="0.0" width="712" height="794"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="4l9-8D-Aaa"/>
@@ -117,7 +117,7 @@
             <objects>
                 <viewController id="JQ9-pR-56a" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nf8-tH-3w3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <rect key="frame" x="0.0" y="0.0" width="712" height="794"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="64l-cS-N28"/>
