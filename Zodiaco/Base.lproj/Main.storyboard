@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="ipad10_2" orientation="landscape" layout="fullscreen" appearance="light"/>
+    <device id="ipad10_5" orientation="portrait" layout="fullscreen" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -12,42 +12,42 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Zodiaco" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="1080" height="810"/>
+                        <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="Zlk-SF-I84">
-                                <rect key="frame" x="16" y="16" width="1048" height="96"/>
+                            <stackView opaque="NO" contentMode="scaleAspectFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Zlk-SF-I84">
+                                <rect key="frame" x="16" y="16" width="802" height="99"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Escribe tu fecha de cumpleaños" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O9e-CE-r86">
-                                        <rect key="frame" x="402" y="0.0" width="244.5" height="30"/>
+                                        <rect key="frame" x="279" y="0.0" width="244.5" height="33"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="ZSX-At-fSe">
-                                        <rect key="frame" x="421" y="33" width="206.5" height="30"/>
+                                        <rect key="frame" x="80" y="33" width="642" height="33"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Año" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sYq-BI-iMZ">
-                                                <rect key="frame" x="0.0" y="0.0" width="55.5" height="30"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Day" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="sYq-BI-iMZ">
+                                                <rect key="frame" x="0.0" y="0.0" width="200.5" height="33"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="decimalPad" enablesReturnKeyAutomatically="YES"/>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Mes" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AaA-BP-XhN">
-                                                <rect key="frame" x="75.5" y="0.0" width="55.5" height="30"/>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Month" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="AaA-BP-XhN">
+                                                <rect key="frame" x="220.5" y="0.0" width="201" height="33"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="decimalPad" enablesReturnKeyAutomatically="YES"/>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Dia" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oxt-VB-4dM">
-                                                <rect key="frame" x="151" y="0.0" width="55.5" height="30"/>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Year" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="oxt-VB-4dM">
+                                                <rect key="frame" x="441.5" y="0.0" width="200.5" height="33"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="decimalPad" enablesReturnKeyAutomatically="YES"/>
                                             </textField>
                                         </subviews>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wP1-fK-nDk">
-                                        <rect key="frame" x="501" y="66" width="46" height="30"/>
-                                        <state key="normal" title="Button"/>
+                                        <rect key="frame" x="386" y="66" width="30" height="33"/>
+                                        <state key="normal" title="Go!"/>
                                         <connections>
+                                            <action selector="didTapButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xEk-Eb-3L3"/>
                                             <segue destination="fwJ-26-JHn" kind="presentation" modalPresentationStyle="pageSheet" id="E3P-YT-FcI">
                                                 <segue key="commit" inheritsFrom="parent" id="KQH-m8-x6c"/>
                                                 <segue key="preview" inheritsFrom="commit" id="tN7-gZ-tWw"/>
@@ -55,9 +55,13 @@
                                         </connections>
                                     </button>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="ZSX-At-fSe" firstAttribute="width" secondItem="Zlk-SF-I84" secondAttribute="width" multiplier="0.8" id="Owe-tE-SYx"/>
+                                    <constraint firstAttribute="bottom" secondItem="AaA-BP-XhN" secondAttribute="bottom" constant="33" id="rLb-Ao-MG6"/>
+                                </constraints>
                             </stackView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="edificio" translatesAutoresizingMaskIntoConstraints="NO" id="P5u-Lz-3Kc">
-                                <rect key="frame" x="16" y="128" width="1048" height="666"/>
+                                <rect key="frame" x="16" y="131" width="802" height="965"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -72,6 +76,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="ageLabel" destination="oxt-VB-4dM" id="MXP-nB-7Tx"/>
+                        <outlet property="dayLabel" destination="sYq-BI-iMZ" id="9dT-nB-bs8"/>
+                        <outlet property="firestQuestion" destination="O9e-CE-r86" id="YJy-jj-oVA"/>
+                        <outlet property="monthLabel" destination="AaA-BP-XhN" id="mCz-gJ-Qpq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -82,7 +92,7 @@
             <objects>
                 <viewController id="9eA-Q2-g7m" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6IR-zp-2Hl">
-                        <rect key="frame" x="0.0" y="0.0" width="712" height="770"/>
+                        <rect key="frame" x="0.0" y="0.0" width="712" height="1006.9200564096436"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="4l9-8D-Aaa"/>
@@ -98,7 +108,7 @@
             <objects>
                 <viewController id="JQ9-pR-56a" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nf8-tH-3w3">
-                        <rect key="frame" x="0.0" y="0.0" width="712" height="770"/>
+                        <rect key="frame" x="0.0" y="0.0" width="712" height="1006.9200564096436"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="64l-cS-N28"/>
@@ -133,6 +143,6 @@
         <image name="edificio" width="1000" height="1000"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="E3P-YT-FcI"/>
+        <segue reference="KQH-m8-x6c"/>
     </inferredMetricsTieBreakers>
 </document>

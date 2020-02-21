@@ -10,11 +10,30 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    var userAge = ""
+    var userMonth = ""
+    var userDay = ""
+    var dateConverted = ""
     
-    let prueba = 0
-    let nuevaPrueba = 0
+    // MARK: - IBOutlets
+    @IBOutlet weak var firestQuestion: UILabel!
+    @IBOutlet weak var dayLabel: UITextField!
+    @IBOutlet weak var monthLabel: UITextField!
+    @IBOutlet weak var ageLabel: UITextField!
     
     
+    // MARK: - IBAction
+    
+    @IBAction func didTapButton(_ sender: Any) {
+        userAge = dayLabel.text!
+        userMonth = monthLabel.text!
+        userDay = ageLabel.text!
+        dateConverted = userAge + userMonth + userDay
+        print("su fecha de cumpleaños es \(dateConverted)")
+    }
+    
+    
+    // MARK: - Function
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
