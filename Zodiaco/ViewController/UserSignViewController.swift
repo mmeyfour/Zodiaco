@@ -10,12 +10,29 @@ import UIKit
 
 class UserSignViewController: UIViewController {
 
+    var userDate = [0,0,0]
+    var userZodiac: ZodiacSign!
+    
     @IBOutlet weak var segController: UISegmentedControl!
     @IBOutlet weak var userZodiacImage: UIImageView!
-    @IBOutlet weak var userZodiacText: UITextView!
+    @IBOutlet weak var userZodiacLabel: UILabel!
+    @IBOutlet weak var pageControl: UIPageControl!
+    
+    @IBAction func didTapPageValue(_ sender: UIPageControl) {
+        if pageControl.currentPage == 0 {
+            segController.selectedSegmentIndex = 0
+            updateUI()
+        } else {
+            segController.selectedSegmentIndex = 1
+            updateUI()
+        }
+        
+        
+    }
     
     @IBAction func changeValue(_ sender: UISegmentedControl) {
         updateUI()
+        print(userDate)
     }
     
     
@@ -30,14 +47,28 @@ class UserSignViewController: UIViewController {
     let index = segController.selectedSegmentIndex
         switch index {
         case 0:
-            
+            pageControl.currentPage = 0
             userZodiacImage.isHidden = false
-            userZodiacText.isHidden = false
+            userZodiacLabel.isHidden = false
             
         default:
-            userZodiacText.isHidden = true
+            pageControl.currentPage = 1
+            userZodiacLabel.isHidden = true
             userZodiacImage.isHidden = true
+            
         }
         
+    }
+    func UserZodiacAnimal(_ dateInArray: Array<Int>) -> ZodiacSign {
+        let year = dateInArray[0]
+        let month = dateInArray[1]
+        let day = dateInArray[2]
+        let diasseguidos = String(dateInArray[0]) + String(dateInArray[1]) + String(dateInArray[2])
+        
+        if year > snape.fromYear && year < snape.toYear {
+            return snape
+        }
+        
+        return snape
     }
 }

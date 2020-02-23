@@ -21,7 +21,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tq9-PK-pyD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="342" y="-680"/>
+            <point key="canvasLocation" x="342" y="-565"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="V5w-Pl-Hsm">
@@ -121,14 +121,13 @@
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="calendario" translatesAutoresizingMaskIntoConstraints="NO" id="nJl-d3-5eF">
                                         <rect key="frame" x="0.0" y="0.0" width="377" height="294"/>
                                     </imageView>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="kAv-Wi-Une">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="egQ-nb-oSG">
                                         <rect key="frame" x="0.0" y="294" width="377" height="294"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                        <string key="text">texto de prueba www.apple.esdsfdfsdiufhsdoufhsovhsfiovhisdhviosdhciohsdoihcoisdhviochsdiovhdsiovhdfiovcsdcszdc siuhdvuzhxfvushdvuhfxhvviushukhdivuchvuisdhvkuxfhvvkhskuvhksudhckusdhviuhsdivhsiudhoushvioudhvshivhsiovhisodhcviuxzhkuvxukdvhxkuidvhusdhihdic</string>
-                                        <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                    </textView>
+                                        <string key="text">prueba texto super largo userZodiacLabel.text = "Inteligente, misterioso, intuitivo, atrevido, ordenado, sofisticado"userZodiacLabel.text = "Inteligente, misterioso, intuitivo, atrevido, ordenado, sofisticado"userZodiacLabel.text = "Inteligente, misterioso, intuitivo, atrevido, ordenado, sofisticado"userZodiacLabel.text = "Inteligente, misterioso, intuitivo, atrevido, ordenado, sofisticado"userZodiacLab</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                             </stackView>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="YOp-O3-x3g">
@@ -145,6 +144,9 @@
                                 <rect key="frame" x="176" y="594" width="23" height="37"/>
                                 <color key="pageIndicatorTintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="currentPageIndicatorTintColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="didTapPageValue:" destination="JQ9-pR-56a" eventType="touchUpInside" id="6XL-5E-rkM"/>
+                                </connections>
                             </pageControl>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -164,14 +166,15 @@
                     <tabBarItem key="tabBarItem" title="Item 1" id="S0F-cM-J7r"/>
                     <navigationItem key="navigationItem" id="GX1-W6-gM6"/>
                     <connections>
+                        <outlet property="pageControl" destination="Twt-kf-ADh" id="sjC-lx-wLv"/>
                         <outlet property="segController" destination="YOp-O3-x3g" id="CUL-po-YGw"/>
                         <outlet property="userZodiacImage" destination="nJl-d3-5eF" id="KEH-9m-Jvn"/>
-                        <outlet property="userZodiacText" destination="kAv-Wi-Une" id="2QT-sz-hCX"/>
+                        <outlet property="userZodiacLabel" destination="egQ-nb-oSG" id="gvH-4x-aCY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NEg-o3-xRH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1245.5999999999999" y="104.7976011994003"/>
+            <point key="canvasLocation" x="1183" y="105"/>
         </scene>
     </scenes>
     <resources>
