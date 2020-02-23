@@ -27,8 +27,10 @@ class ViewController: UIViewController {
     }
     
     @IBAction func didTapGoButton(_ sender: UIButton) {
-        dateInArray = dateConvert(datePicker.date)
+        // dateInArray = dateConvert(datePicker.date)
+        chooseZodiacByDate()
         goButton.isEnabled = false
+        datePicker.setDate(dateConvert(date: "31/12/2000"), animated: true)
     }
     
     // MARK: - Function
@@ -37,7 +39,7 @@ class ViewController: UIViewController {
         goButton.isEnabled = false
         // Do any additional setup after loading the view.
     }
-    
+    /*
     func dateConvert(_ date: Date) -> Array<Int> {
         let dateInString = date.description
         let dateSpliteinBlank = dateInString.split(separator: " ")
@@ -47,7 +49,7 @@ class ViewController: UIViewController {
         let day = Int(dateSplited[2])
         return [year!,month!,day!]
     }
-    
+    */
     func dateConvert(date: String) -> Date {
         let dateFormate = DateFormatter()
         dateFormate.dateFormat = "dd/MM/yyyy"
@@ -116,14 +118,17 @@ class ViewController: UIViewController {
                && dateConvert(date: "23/01/2001") >= chosenDate {
                
                zodiacSign = dragon
-           }
+           } else {
+            zodiacSign = dog
+        }
            
        }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let destination = segue.destination as? UserSignViewController else { return }
         
-        destination.userDate = dateInArray
+        // destination.userDate = dateInArray
+        destination.userZodiac = zodiacSign
         
     }
 }

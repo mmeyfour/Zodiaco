@@ -40,7 +40,7 @@ class UserSignViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        userLabelActualization()
     }
 
     func updateUI(){
@@ -59,6 +59,14 @@ class UserSignViewController: UIViewController {
         }
         
     }
+    
+    func userLabelActualization(){
+        
+        userZodiacLabel.text = "Su signo zodiaco chino es \(userZodiac.name), es destacado por ser \(userZodiac.description)"
+  
+    }
+        
+    /*
     func UserZodiacAnimal(_ dateInArray: Array<Int>) -> ZodiacSign {
         let year = dateInArray[0]
         let month = dateInArray[1]
@@ -71,4 +79,5 @@ class UserSignViewController: UIViewController {
         
         return snape
     }
+ */
 }

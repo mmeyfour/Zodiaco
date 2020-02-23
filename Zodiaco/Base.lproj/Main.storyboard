@@ -121,9 +121,8 @@
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="calendario" translatesAutoresizingMaskIntoConstraints="NO" id="nJl-d3-5eF">
                                         <rect key="frame" x="0.0" y="0.0" width="377" height="294"/>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="egQ-nb-oSG">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="egQ-nb-oSG">
                                         <rect key="frame" x="0.0" y="294" width="377" height="294"/>
-                                        <string key="text">prueba texto super largo userZodiacLabel.text = "Inteligente, misterioso, intuitivo, atrevido, ordenado, sofisticado"userZodiacLabel.text = "Inteligente, misterioso, intuitivo, atrevido, ordenado, sofisticado"userZodiacLabel.text = "Inteligente, misterioso, intuitivo, atrevido, ordenado, sofisticado"userZodiacLabel.text = "Inteligente, misterioso, intuitivo, atrevido, ordenado, sofisticado"userZodiacLab</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
