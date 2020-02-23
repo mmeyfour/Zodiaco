@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		505C7B6D2402B40B0060A397 /* ZodiacViewLab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505C7B6C2402B40B0060A397 /* ZodiacViewLab.swift */; };
 		509F147D23FE77BF00BD8CFC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 509F147C23FE77BF00BD8CFC /* AppDelegate.swift */; };
 		509F147F23FE77BF00BD8CFC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 509F147E23FE77BF00BD8CFC /* SceneDelegate.swift */; };
 		509F148123FE77BF00BD8CFC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 509F148023FE77BF00BD8CFC /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		505C7B6C2402B40B0060A397 /* ZodiacViewLab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZodiacViewLab.swift; sourceTree = "<group>"; };
 		509F147923FE77BF00BD8CFC /* Zodiaco.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Zodiaco.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		509F147C23FE77BF00BD8CFC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		509F147E23FE77BF00BD8CFC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +39,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		505C7B6B2402AE010060A397 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				509F148023FE77BF00BD8CFC /* ViewController.swift */,
+				505C7B6C2402B40B0060A397 /* ZodiacViewLab.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 		509F147023FE77BF00BD8CFC = {
 			isa = PBXGroup;
 			children = (
@@ -56,9 +67,9 @@
 		509F147B23FE77BF00BD8CFC /* Zodiaco */ = {
 			isa = PBXGroup;
 			children = (
+				505C7B6B2402AE010060A397 /* ViewController */,
 				509F147C23FE77BF00BD8CFC /* AppDelegate.swift */,
 				509F147E23FE77BF00BD8CFC /* SceneDelegate.swift */,
-				509F148023FE77BF00BD8CFC /* ViewController.swift */,
 				509F148223FE77BF00BD8CFC /* Main.storyboard */,
 				509F148523FE77CD00BD8CFC /* Assets.xcassets */,
 				509F148723FE77CD00BD8CFC /* LaunchScreen.storyboard */,
@@ -139,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				509F148123FE77BF00BD8CFC /* ViewController.swift in Sources */,
+				505C7B6D2402B40B0060A397 /* ZodiacViewLab.swift in Sources */,
 				509F147D23FE77BF00BD8CFC /* AppDelegate.swift in Sources */,
 				509F147F23FE77BF00BD8CFC /* SceneDelegate.swift in Sources */,
 			);
