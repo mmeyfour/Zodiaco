@@ -10,21 +10,34 @@ import UIKit
 
 class UserSignViewController: UIViewController {
 
+    @IBOutlet weak var segController: UISegmentedControl!
+    @IBOutlet weak var userZodiacImage: UIImageView!
+    @IBOutlet weak var userZodiacText: UITextView!
+    
+    @IBAction func changeValue(_ sender: UISegmentedControl) {
+        updateUI()
+    }
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
-    
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func updateUI(){
+    let index = segController.selectedSegmentIndex
+        switch index {
+        case 0:
+            
+            userZodiacImage.isHidden = false
+            userZodiacText.isHidden = false
+            
+        default:
+            userZodiacText.isHidden = true
+            userZodiacImage.isHidden = true
+        }
+        
     }
-    */
-
 }
