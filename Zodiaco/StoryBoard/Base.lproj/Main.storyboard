@@ -7,35 +7,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="oTB-NK-LxG">
-            <objects>
-                <viewController id="Fs2-gf-pGD" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="LZT-eF-Nbd">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="heQ-Ww-7Gh">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="668"/>
-                                <viewLayoutGuide key="contentLayoutGuide" id="neT-Ms-UXf"/>
-                                <viewLayoutGuide key="frameLayoutGuide" id="EzO-3R-ghV"/>
-                            </scrollView>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="Bdm-nn-zOc" firstAttribute="trailing" secondItem="heQ-Ww-7Gh" secondAttribute="trailing" id="71d-hy-bY7"/>
-                            <constraint firstItem="heQ-Ww-7Gh" firstAttribute="top" secondItem="Bdm-nn-zOc" secondAttribute="top" id="CTJ-Xg-fAE"/>
-                            <constraint firstItem="heQ-Ww-7Gh" firstAttribute="bottom" secondItem="Bdm-nn-zOc" secondAttribute="bottom" constant="50" id="PGu-jY-pBe"/>
-                            <constraint firstItem="heQ-Ww-7Gh" firstAttribute="leading" secondItem="Bdm-nn-zOc" secondAttribute="leading" id="jWH-Yh-ETS"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="Bdm-nn-zOc"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="" image="info.circle" catalog="system" landscapeImage="info.circle.fill" selectedImage="info" id="s9S-IR-uHM"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Tq9-PK-pyD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="341.60000000000002" y="-565.36731634182911"/>
-        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="V5w-Pl-Hsm">
             <objects>
@@ -47,7 +18,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="jO5-gS-L22"/>
-                        <segue destination="Fs2-gf-pGD" kind="relationship" relationship="viewControllers" id="xEJ-SV-NNj"/>
+                        <segue destination="Xwo-V8-Ibs" kind="relationship" relationship="viewControllers" id="dz3-oc-1g8"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N4w-NB-7BT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -230,8 +201,141 @@
             </objects>
             <point key="canvasLocation" x="1181.5999999999999" y="104.7976011994003"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="Rxc-0j-eRF">
+            <objects>
+                <viewController id="Xwo-V8-Ibs" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sFE-Nl-zFV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IQF-gl-kr4">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="bTQ-av-ZPp">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1125"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleAspectFit" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Nev-gQ-B44">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="187.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2cE-3M-Ubi">
+                                                        <rect key="frame" x="0.0" y="0.0" width="187.5" height="187.5"/>
+                                                        <state key="normal" image="Buey"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uw7-ev-2ex">
+                                                        <rect key="frame" x="187.5" y="0.0" width="187.5" height="187.5"/>
+                                                        <state key="normal" image="Caballo"/>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleAspectFit" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="CrH-29-U2v">
+                                                <rect key="frame" x="0.0" y="187.5" width="375" height="187.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="99T-5D-wZj">
+                                                        <rect key="frame" x="0.0" y="0.0" width="187.5" height="187.5"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="99T-5D-wZj" secondAttribute="height" id="a97-7s-9IV"/>
+                                                        </constraints>
+                                                        <state key="normal" image="Rata"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0mP-fo-ZvM">
+                                                        <rect key="frame" x="187.5" y="0.0" width="187.5" height="187.5"/>
+                                                        <state key="normal" image="Serpiente"/>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleAspectFit" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Hvd-6V-BBY">
+                                                <rect key="frame" x="0.0" y="375" width="375" height="187.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hQf-yV-09f">
+                                                        <rect key="frame" x="0.0" y="0.0" width="187.5" height="187.5"/>
+                                                        <state key="normal" image="Cabra"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vO7-u9-DVb">
+                                                        <rect key="frame" x="187.5" y="0.0" width="187.5" height="187.5"/>
+                                                        <state key="normal" image="Cerdo"/>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleAspectFit" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="mAF-i7-FRE">
+                                                <rect key="frame" x="0.0" y="562.5" width="375" height="187.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="haX-1R-uHZ">
+                                                        <rect key="frame" x="0.0" y="0.0" width="187.5" height="187.5"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="haX-1R-uHZ" secondAttribute="height" id="7yV-Rf-sEf"/>
+                                                        </constraints>
+                                                        <state key="normal" image="Rata"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l5O-eq-LI3">
+                                                        <rect key="frame" x="187.5" y="0.0" width="187.5" height="187.5"/>
+                                                        <state key="normal" image="Serpiente"/>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleAspectFit" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="BYS-CB-QXL">
+                                                <rect key="frame" x="0.0" y="750" width="375" height="187.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Yh-9G-rR5">
+                                                        <rect key="frame" x="0.0" y="0.0" width="187.5" height="187.5"/>
+                                                        <state key="normal" image="Cabra"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="df0-K4-cZt">
+                                                        <rect key="frame" x="187.5" y="0.0" width="187.5" height="187.5"/>
+                                                        <state key="normal" image="Cerdo"/>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleAspectFit" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="1CE-VL-eBA">
+                                                <rect key="frame" x="0.0" y="937.5" width="375" height="187.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0de-iA-RV8">
+                                                        <rect key="frame" x="0.0" y="0.0" width="187.5" height="187.5"/>
+                                                        <state key="normal" image="Buey"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xl0-GK-eE9">
+                                                        <rect key="frame" x="187.5" y="0.0" width="187.5" height="187.5"/>
+                                                        <state key="normal" image="Caballo"/>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="bTQ-av-ZPp" firstAttribute="bottom" secondItem="kYR-7Z-oS9" secondAttribute="bottom" id="I9O-6H-B93"/>
+                                    <constraint firstItem="bTQ-av-ZPp" firstAttribute="leading" secondItem="kYR-7Z-oS9" secondAttribute="leading" id="Jfy-1Z-nHw"/>
+                                    <constraint firstItem="bTQ-av-ZPp" firstAttribute="width" secondItem="o4z-5z-uZL" secondAttribute="width" id="TG2-qw-qDV"/>
+                                    <constraint firstItem="bTQ-av-ZPp" firstAttribute="top" secondItem="kYR-7Z-oS9" secondAttribute="top" id="jH0-b2-lBm"/>
+                                    <constraint firstItem="bTQ-av-ZPp" firstAttribute="trailing" secondItem="kYR-7Z-oS9" secondAttribute="trailing" id="xb2-QN-MtI"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="kYR-7Z-oS9"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="o4z-5z-uZL"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="IQF-gl-kr4" firstAttribute="top" secondItem="dKh-xs-ckY" secondAttribute="top" id="8UZ-yL-nTv"/>
+                            <constraint firstItem="IQF-gl-kr4" firstAttribute="bottom" secondItem="dKh-xs-ckY" secondAttribute="bottom" id="UPH-hB-DvJ"/>
+                            <constraint firstItem="IQF-gl-kr4" firstAttribute="trailing" secondItem="dKh-xs-ckY" secondAttribute="trailing" id="eF3-5v-jbW"/>
+                            <constraint firstItem="IQF-gl-kr4" firstAttribute="leading" secondItem="dKh-xs-ckY" secondAttribute="leading" id="mom-Xx-z5n"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="dKh-xs-ckY"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="info.circle" catalog="system" landscapeImage="info.circle.fill" selectedImage="info" id="ftA-ST-DK8"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nkD-rx-XA7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="342" y="-581"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="Buey" width="1470" height="1547"/>
+        <image name="Caballo" width="1455" height="1450"/>
+        <image name="Cabra" width="1463" height="1432"/>
+        <image name="Cerdo" width="1461" height="1418"/>
+        <image name="Rata" width="1301" height="1415"/>
+        <image name="Serpiente" width="1395" height="1496"/>
         <image name="calendar" catalog="system" width="64" height="52"/>
         <image name="calendar.circle" catalog="system" width="64" height="60"/>
         <image name="calendar.circle.fill" catalog="system" width="64" height="60"/>
