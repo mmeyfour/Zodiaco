@@ -62,7 +62,8 @@ class UserSignViewController: UIViewController {
     
     func userLabelActualization(){
         
-        userZodiacLabel.text = "Su signo zodiaco chino es \(userZodiac.name), es destacado por ser \(userZodiac.description)"
+        userZodiacLabel.text = "Su signo zodiaco chino es \(userZodiac.name), es destacado por ser \(userZodiac.description)."
+        userZodiacImage.image = userZodiac.animalImage
   
     }
         
