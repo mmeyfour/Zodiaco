@@ -10,9 +10,11 @@ import UIKit
 
 class UserSignViewController: UIViewController {
     
+    //MARK: - Variables
     var userDate = [0,0,0]
     var userZodiac: ZodiacSign!
     
+    //MARK: - IBOutlets
     @IBOutlet weak var segController: UISegmentedControl!
     @IBOutlet weak var userZodiacImage: UIImageView!
     @IBOutlet weak var userZodiacLabel: UILabel!
@@ -23,6 +25,7 @@ class UserSignViewController: UIViewController {
     @IBOutlet weak var secondUserZodiacLabel: UILabel!
     @IBOutlet weak var aspecttImage: UIImageView!
     
+    //MARK: - IBAction
     @IBAction func didTapPageValue(_ sender: UIPageControl) {
         if pageControl.currentPage == 0 {
             segController.selectedSegmentIndex = 0
@@ -31,22 +34,16 @@ class UserSignViewController: UIViewController {
             segController.selectedSegmentIndex = 1
             updateUI()
         }
-        
-        
     }
     
     @IBAction func changeValue(_ sender: UISegmentedControl) {
         updateUI()
         print(userDate)
     }
-    
-    
-    
+    //MARK: - Function
     override func viewDidLoad() {
         super.viewDidLoad()
         updateUI()
-        
-        
     }
     
     func updateUI(){
@@ -87,7 +84,6 @@ class UserSignViewController: UIViewController {
             aspecttImage.isHidden = true
             
         }
-        
     }
     
     func userLabelActualization(){
@@ -105,7 +101,5 @@ class UserSignViewController: UIViewController {
             view.backgroundColor = UIColor.gray
             aspecttImage.image = UIImage(named:"YinYang")
         }
-        
     }
-    
 }

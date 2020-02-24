@@ -7,7 +7,7 @@
 //
 import UIKit
 import Foundation
-
+//MARK: - Struct
 struct ZodiacSign {
     
     let name: String
@@ -25,7 +25,7 @@ struct ZodiacSign {
     let animalImage: UIImage
     let elementImage: UIImage
 }
-
+//MARK: - Declaration
 
 let snape = ZodiacSign(name: "Serpiente", description: "Inteligente, misterioso, intuitivo, atrevido, ordenado, sofisticado", fromYear: 1989, fromMonth: 2, fromDay: 6, toYear: 1990, toMonth: 1, toDay: 26, aspect: "Yin", element: "Tierra", firstAfinity: "Gallo", secondAfinity: "Buey", animalImage: UIImage(named:"Serpiente")!, elementImage: UIImage(named:"Tierra")!)
 let horse = ZodiacSign(name: "Caballo", description: "Leal, trabajador, gregario, cordial, energico, popular", fromYear: 1990, fromMonth: 1, fromDay: 27, toYear: 1991, toMonth: 2, toDay: 14, aspect: "Yang", element: "Metal", firstAfinity: "Tigre", secondAfinity: "Perro", animalImage: UIImage(named:"Caballo")!, elementImage: UIImage(named:"Metal")!)

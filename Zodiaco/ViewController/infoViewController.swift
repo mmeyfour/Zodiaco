@@ -10,8 +10,10 @@ import UIKit
 
 
 class infoViewController: UIViewController {
+    //MARK: - Variables
     var infozodiacSign: ZodiacSign!
     
+    //MARK: - IBAction
     @IBAction func oxButton(_ sender: UIButton) {
         infozodiacSign = ox
     }
@@ -48,19 +50,15 @@ class infoViewController: UIViewController {
     @IBAction func tigerButton(_ sender: UIButton) {
         infozodiacSign = tiger
     }
-    
+    //MARK: - Function
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Do any additional setup after loading the view.
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let destination = segue.destination as? UserSignViewController else { return }
         
         destination.userZodiac = infozodiacSign
-        
     }
-    
-    
 }
