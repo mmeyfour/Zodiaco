@@ -100,10 +100,10 @@ class UserSignViewController: UIViewController {
         secondUserZodiacLabel.text = "El elemento correspondiente a su signo zodiaco es \(userZodiac.element) de aspecto \(userZodiac.aspect) y es compatible con \(userZodiac.firstAfinity) y \(userZodiac.secondAfinity)"
         if userZodiac.aspect == "Yin"{
             view.backgroundColor = UIColor.white
-            aspecttImage.image = UIImage(named:"YinYang")
+            aspecttImage.image = UIImage(named:"YangYin")
         } else {
             view.backgroundColor = UIColor.gray
-            aspecttImage.image = UIImage(named:"YangYin")
+            aspecttImage.image = UIImage(named:"YinYang")
         }
         
     }
