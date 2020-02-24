@@ -17,6 +17,10 @@ class UserSignViewController: UIViewController {
     @IBOutlet weak var userZodiacImage: UIImageView!
     @IBOutlet weak var userZodiacLabel: UILabel!
     @IBOutlet weak var pageControl: UIPageControl!
+    @IBOutlet weak var elementImage: UIImageView!
+    @IBOutlet weak var firstAfinityImage: UIImageView!
+    @IBOutlet weak var secondAfinityImage: UIImageView!
+    
     
     @IBAction func didTapPageValue(_ sender: UIPageControl) {
         if pageControl.currentPage == 0 {
@@ -39,22 +43,29 @@ class UserSignViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        userLabelActualization()
+        updateUI()
+        
     }
 
     func updateUI(){
     let index = segController.selectedSegmentIndex
+        userLabelActualization()
         switch index {
         case 0:
             pageControl.currentPage = 0
             userZodiacImage.isHidden = false
             userZodiacLabel.isHidden = false
+            elementImage.isHidden = true
+            firstAfinityImage.isHidden = true
+            secondAfinityImage.isHidden = true
             
         default:
             pageControl.currentPage = 1
             userZodiacLabel.isHidden = true
             userZodiacImage.isHidden = true
+            elementImage.isHidden = false
+            firstAfinityImage.isHidden = false
+            secondAfinityImage.isHidden = false
             
         }
         
@@ -64,6 +75,7 @@ class UserSignViewController: UIViewController {
         
         userZodiacLabel.text = "Su signo zodiaco chino es \(userZodiac.name), es destacado por ser \(userZodiac.description)."
         userZodiacImage.image = userZodiac.animalImage
+        elementImage.image = userZodiac.elementImage
   
     }
         

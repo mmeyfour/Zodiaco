@@ -147,25 +147,62 @@
                                     <action selector="didTapPageValue:" destination="JQ9-pR-56a" eventType="touchUpInside" id="6XL-5E-rkM"/>
                                 </connections>
                             </pageControl>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="gdg-GW-T0l">
+                                <rect key="frame" x="0.0" y="59" width="375" height="588"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4AV-2s-qTB">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="196"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jSR-xv-pWK">
+                                        <rect key="frame" x="0.0" y="196" width="375" height="196"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="lKn-5T-1ei">
+                                        <rect key="frame" x="0.0" y="392" width="375" height="196"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TpU-Ey-P37">
+                                                <rect key="frame" x="0.0" y="0.0" width="187.5" height="196"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="EVr-4D-IXd">
+                                                <rect key="frame" x="187.5" y="0.0" width="187.5" height="196"/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="MQJ-Jd-qc7" firstAttribute="top" secondItem="YOp-O3-x3g" secondAttribute="bottom" constant="8" id="0nH-v1-oHi"/>
                             <constraint firstItem="YOp-O3-x3g" firstAttribute="top" secondItem="64l-cS-N28" secondAttribute="top" constant="20" id="66H-B3-qP6"/>
                             <constraint firstItem="Twt-kf-ADh" firstAttribute="centerX" secondItem="64l-cS-N28" secondAttribute="centerX" id="9J4-sd-VAw"/>
+                            <constraint firstItem="gdg-GW-T0l" firstAttribute="leading" secondItem="64l-cS-N28" secondAttribute="leading" id="HIq-8B-I3w"/>
                             <constraint firstItem="MQJ-Jd-qc7" firstAttribute="trailing" secondItem="64l-cS-N28" secondAttribute="trailing" constant="2" id="IZC-Qx-mux"/>
+                            <constraint firstItem="64l-cS-N28" firstAttribute="bottom" secondItem="gdg-GW-T0l" secondAttribute="bottom" id="aMe-jp-rKi"/>
                             <constraint firstItem="64l-cS-N28" firstAttribute="trailing" secondItem="YOp-O3-x3g" secondAttribute="trailing" constant="16" id="aQu-GP-kYq"/>
                             <constraint firstItem="Twt-kf-ADh" firstAttribute="bottom" secondItem="64l-cS-N28" secondAttribute="bottom" constant="-16" id="awY-ii-Kzw"/>
+                            <constraint firstItem="64l-cS-N28" firstAttribute="trailing" secondItem="gdg-GW-T0l" secondAttribute="trailing" id="cD7-T8-Z9b"/>
                             <constraint firstItem="MQJ-Jd-qc7" firstAttribute="leading" secondItem="64l-cS-N28" secondAttribute="leading" id="gvR-W0-mIy"/>
+                            <constraint firstItem="gdg-GW-T0l" firstAttribute="top" secondItem="64l-cS-N28" secondAttribute="top" constant="59" id="wPc-3C-J3D"/>
                             <constraint firstItem="YOp-O3-x3g" firstAttribute="leading" secondItem="64l-cS-N28" secondAttribute="leading" constant="16" id="xgK-cU-0Zz"/>
                             <constraint firstItem="64l-cS-N28" firstAttribute="bottom" secondItem="MQJ-Jd-qc7" secondAttribute="bottom" id="y5e-ho-3FC"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="64l-cS-N28"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="MQJ-Jd-qc7"/>
+                            </mask>
+                        </variation>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 1" id="S0F-cM-J7r"/>
                     <navigationItem key="navigationItem" id="GX1-W6-gM6"/>
                     <connections>
+                        <outlet property="elementImage" destination="4AV-2s-qTB" id="dbj-fm-CLk"/>
+                        <outlet property="firstAfinityImage" destination="TpU-Ey-P37" id="hEy-j6-f8W"/>
                         <outlet property="pageControl" destination="Twt-kf-ADh" id="sjC-lx-wLv"/>
+                        <outlet property="secondAfinityImage" destination="EVr-4D-IXd" id="ig0-Y9-N1L"/>
                         <outlet property="segController" destination="YOp-O3-x3g" id="CUL-po-YGw"/>
                         <outlet property="userZodiacImage" destination="nJl-d3-5eF" id="KEH-9m-Jvn"/>
                         <outlet property="userZodiacLabel" destination="egQ-nb-oSG" id="gvH-4x-aCY"/>
@@ -173,7 +210,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NEg-o3-xRH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1183" y="105"/>
+            <point key="canvasLocation" x="1181.5999999999999" y="104.7976011994003"/>
         </scene>
     </scenes>
     <resources>

@@ -41,6 +41,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		50415C6524035C9A00DA532A /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				509F148223FE77BF00BD8CFC /* Main.storyboard */,
+				509F148723FE77CD00BD8CFC /* LaunchScreen.storyboard */,
+			);
+			path = StoryBoard;
+			sourceTree = "<group>";
+		};
+		50415C6624035CBB00DA532A /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				509F147C23FE77BF00BD8CFC /* AppDelegate.swift */,
+				509F147E23FE77BF00BD8CFC /* SceneDelegate.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
 		505C7B6B2402AE010060A397 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -70,12 +88,10 @@
 		509F147B23FE77BF00BD8CFC /* Zodiaco */ = {
 			isa = PBXGroup;
 			children = (
+				50415C6624035CBB00DA532A /* Delegate */,
+				50415C6524035C9A00DA532A /* StoryBoard */,
 				505C7B6B2402AE010060A397 /* ViewController */,
-				509F147C23FE77BF00BD8CFC /* AppDelegate.swift */,
-				509F147E23FE77BF00BD8CFC /* SceneDelegate.swift */,
-				509F148223FE77BF00BD8CFC /* Main.storyboard */,
 				509F148523FE77CD00BD8CFC /* Assets.xcassets */,
-				509F148723FE77CD00BD8CFC /* LaunchScreen.storyboard */,
 				509F148A23FE77CD00BD8CFC /* Info.plist */,
 			);
 			path = Zodiaco;
