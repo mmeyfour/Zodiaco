@@ -129,6 +129,39 @@
                                     </label>
                                 </subviews>
                             </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="gdg-GW-T0l">
+                                <rect key="frame" x="0.0" y="59" width="375" height="588"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4AV-2s-qTB">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="196"/>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pbe-C1-Gy4">
+                                        <rect key="frame" x="0.0" y="196" width="375" height="196"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jSR-xv-pWK">
+                                                <rect key="frame" x="0.0" y="0.0" width="187.5" height="196"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Xqk-eT-3QP">
+                                                <rect key="frame" x="187.5" y="0.0" width="187.5" height="196"/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="lKn-5T-1ei">
+                                        <rect key="frame" x="0.0" y="392" width="375" height="196"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TpU-Ey-P37">
+                                                <rect key="frame" x="0.0" y="0.0" width="187.5" height="196"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="EVr-4D-IXd">
+                                                <rect key="frame" x="187.5" y="0.0" width="187.5" height="196"/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="YOp-O3-x3g">
                                 <rect key="frame" x="16" y="20" width="343" height="32"/>
                                 <segments>
@@ -147,31 +180,6 @@
                                     <action selector="didTapPageValue:" destination="JQ9-pR-56a" eventType="touchUpInside" id="6XL-5E-rkM"/>
                                 </connections>
                             </pageControl>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="gdg-GW-T0l">
-                                <rect key="frame" x="0.0" y="59" width="375" height="588"/>
-                                <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4AV-2s-qTB">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="196"/>
-                                    </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jSR-xv-pWK">
-                                        <rect key="frame" x="0.0" y="196" width="375" height="196"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="lKn-5T-1ei">
-                                        <rect key="frame" x="0.0" y="392" width="375" height="196"/>
-                                        <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TpU-Ey-P37">
-                                                <rect key="frame" x="0.0" y="0.0" width="187.5" height="196"/>
-                                            </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="EVr-4D-IXd">
-                                                <rect key="frame" x="187.5" y="0.0" width="187.5" height="196"/>
-                                            </imageView>
-                                        </subviews>
-                                    </stackView>
-                                </subviews>
-                            </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -190,19 +198,16 @@
                             <constraint firstItem="64l-cS-N28" firstAttribute="bottom" secondItem="MQJ-Jd-qc7" secondAttribute="bottom" id="y5e-ho-3FC"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="64l-cS-N28"/>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="MQJ-Jd-qc7"/>
-                            </mask>
-                        </variation>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 1" id="S0F-cM-J7r"/>
                     <navigationItem key="navigationItem" id="GX1-W6-gM6"/>
                     <connections>
+                        <outlet property="aspecttImage" destination="Xqk-eT-3QP" id="4pp-kk-m4d"/>
                         <outlet property="elementImage" destination="4AV-2s-qTB" id="dbj-fm-CLk"/>
                         <outlet property="firstAfinityImage" destination="TpU-Ey-P37" id="hEy-j6-f8W"/>
                         <outlet property="pageControl" destination="Twt-kf-ADh" id="sjC-lx-wLv"/>
                         <outlet property="secondAfinityImage" destination="EVr-4D-IXd" id="ig0-Y9-N1L"/>
+                        <outlet property="secondUserZodiacLabel" destination="jSR-xv-pWK" id="5aB-zo-KW6"/>
                         <outlet property="segController" destination="YOp-O3-x3g" id="CUL-po-YGw"/>
                         <outlet property="userZodiacImage" destination="nJl-d3-5eF" id="KEH-9m-Jvn"/>
                         <outlet property="userZodiacLabel" destination="egQ-nb-oSG" id="gvH-4x-aCY"/>

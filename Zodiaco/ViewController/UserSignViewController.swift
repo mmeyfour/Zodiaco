@@ -9,7 +9,7 @@
 import UIKit
 
 class UserSignViewController: UIViewController {
-
+    
     var userDate = [0,0,0]
     var userZodiac: ZodiacSign!
     
@@ -20,7 +20,8 @@ class UserSignViewController: UIViewController {
     @IBOutlet weak var elementImage: UIImageView!
     @IBOutlet weak var firstAfinityImage: UIImageView!
     @IBOutlet weak var secondAfinityImage: UIImageView!
-    
+    @IBOutlet weak var secondUserZodiacLabel: UILabel!
+    @IBOutlet weak var aspecttImage: UIImageView!
     
     @IBAction func didTapPageValue(_ sender: UIPageControl) {
         if pageControl.currentPage == 0 {
@@ -45,27 +46,45 @@ class UserSignViewController: UIViewController {
         super.viewDidLoad()
         updateUI()
         
+        
     }
-
+    
     func updateUI(){
-    let index = segController.selectedSegmentIndex
+        let index = segController.selectedSegmentIndex
         userLabelActualization()
         switch index {
         case 0:
+            
             pageControl.currentPage = 0
             userZodiacImage.isHidden = false
             userZodiacLabel.isHidden = false
             elementImage.isHidden = true
             firstAfinityImage.isHidden = true
             secondAfinityImage.isHidden = true
+            secondUserZodiacLabel.isHidden = true
+            aspecttImage.isHidden = true
             
-        default:
+        case 1:
+            
             pageControl.currentPage = 1
-            userZodiacLabel.isHidden = true
             userZodiacImage.isHidden = true
+            userZodiacLabel.isHidden = true
             elementImage.isHidden = false
             firstAfinityImage.isHidden = false
             secondAfinityImage.isHidden = false
+            secondUserZodiacLabel.isHidden = false
+            aspecttImage.isHidden = false
+            
+        default:
+            
+            pageControl.currentPage = 0
+            userZodiacImage.isHidden = false
+            userZodiacLabel.isHidden = false
+            elementImage.isHidden = true
+            firstAfinityImage.isHidden = true
+            secondAfinityImage.isHidden = true
+            secondUserZodiacLabel.isHidden = true
+            aspecttImage.isHidden = true
             
         }
         
@@ -76,21 +95,17 @@ class UserSignViewController: UIViewController {
         userZodiacLabel.text = "Su signo zodiaco chino es \(userZodiac.name), es destacado por ser \(userZodiac.description)."
         userZodiacImage.image = userZodiac.animalImage
         elementImage.image = userZodiac.elementImage
-  
-    }
-        
-    /*
-    func UserZodiacAnimal(_ dateInArray: Array<Int>) -> ZodiacSign {
-        let year = dateInArray[0]
-        let month = dateInArray[1]
-        let day = dateInArray[2]
-        let diasseguidos = String(dateInArray[0]) + String(dateInArray[1]) + String(dateInArray[2])
-        
-        if year > snape.fromYear && year < snape.toYear {
-            return snape
+        firstAfinityImage.image = UIImage(named: userZodiac.firstAfinity)
+        secondAfinityImage.image = UIImage(named: userZodiac.secondAfinity)
+        secondUserZodiacLabel.text = "El elemento correspondiente a su signo zodiaco es \(userZodiac.element) de aspecto \(userZodiac.aspect) y es compatible con \(userZodiac.firstAfinity) y \(userZodiac.secondAfinity)"
+        if userZodiac.aspect == "Yin"{
+            view.backgroundColor = UIColor.white
+            aspecttImage.image = UIImage(named:"YinYang")
+        } else {
+            view.backgroundColor = UIColor.gray
+            aspecttImage.image = UIImage(named:"YangYin")
         }
         
-        return snape
     }
- */
+    
 }
