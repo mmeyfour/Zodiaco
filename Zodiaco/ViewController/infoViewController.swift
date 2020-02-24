@@ -8,23 +8,59 @@
 
 import UIKit
 
-class infoViewController: UIViewController {
 
+class infoViewController: UIViewController {
+    var infozodiacSign: ZodiacSign!
+    
+    @IBAction func oxButton(_ sender: UIButton) {
+        infozodiacSign = ox
+    }
+    @IBAction func horseButton(_ sender: UIButton) {
+        infozodiacSign = horse
+    }
+    @IBAction func ratButton(_ sender: UIButton) {
+        infozodiacSign = rat
+    }
+    @IBAction func snapeButton(_ sender: UIButton) {
+        infozodiacSign = snape
+    }
+    @IBAction func goatButton(_ sender: UIButton) {
+        infozodiacSign = goat
+    }
+    @IBAction func pigButton(_ sender: UIButton) {
+        infozodiacSign = pig
+    }
+    @IBAction func dragontButton(_ sender: UIButton) {
+        infozodiacSign = dragon
+    }
+    @IBAction func roosterButton(_ sender: UIButton) {
+        infozodiacSign = rooster
+    }
+    @IBAction func hareButton(_ sender: UIButton) {
+        infozodiacSign = hare
+    }
+    @IBAction func monkeyButton(_ sender: UIButton) {
+        infozodiacSign = monkey
+    }
+    @IBAction func dogButton(_ sender: UIButton) {
+        infozodiacSign = dog
+    }
+    @IBAction func tigerButton(_ sender: UIButton) {
+        infozodiacSign = tiger
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        guard let destination = segue.destination as? UserSignViewController else { return }
+        
+        destination.userZodiac = infozodiacSign
+        
     }
-    */
-
+    
+    
 }

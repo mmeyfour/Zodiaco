@@ -201,10 +201,10 @@
             </objects>
             <point key="canvasLocation" x="1181.5999999999999" y="104.7976011994003"/>
         </scene>
-        <!--View Controller-->
+        <!--Info View Controller-->
         <scene sceneID="Rxc-0j-eRF">
             <objects>
-                <viewController id="Xwo-V8-Ibs" sceneMemberID="viewController">
+                <viewController id="Xwo-V8-Ibs" customClass="infoViewController" customModule="Zodiaco" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sFE-Nl-zFV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -222,6 +222,8 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="187.5" height="187.5"/>
                                                         <state key="normal" image="Buey"/>
                                                         <connections>
+                                                            <action selector="oxButton:" destination="IZh-Wv-RZB" eventType="touchUpInside" id="XhB-ES-s8E"/>
+                                                            <action selector="oxButton:" destination="Xwo-V8-Ibs" eventType="touchUpInside" id="deZ-3e-E5i"/>
                                                             <segue destination="JQ9-pR-56a" kind="show" id="OIs-J2-qKQ"/>
                                                         </connections>
                                                     </button>
@@ -229,6 +231,8 @@
                                                         <rect key="frame" x="187.5" y="0.0" width="187.5" height="187.5"/>
                                                         <state key="normal" image="Caballo"/>
                                                         <connections>
+                                                            <action selector="horseButton:" destination="IZh-Wv-RZB" eventType="touchUpInside" id="285-WN-wm9"/>
+                                                            <action selector="horseButton:" destination="Xwo-V8-Ibs" eventType="touchUpInside" id="tc1-lK-soo"/>
                                                             <segue destination="JQ9-pR-56a" kind="show" id="UIS-NO-L57"/>
                                                         </connections>
                                                     </button>
@@ -244,6 +248,8 @@
                                                         </constraints>
                                                         <state key="normal" image="Rata"/>
                                                         <connections>
+                                                            <action selector="ratButton:" destination="IZh-Wv-RZB" eventType="touchUpInside" id="eTz-v0-skG"/>
+                                                            <action selector="ratButton:" destination="Xwo-V8-Ibs" eventType="touchUpInside" id="gQT-oO-iZh"/>
                                                             <segue destination="JQ9-pR-56a" kind="show" id="6vI-NR-9gS"/>
                                                         </connections>
                                                     </button>
@@ -251,6 +257,7 @@
                                                         <rect key="frame" x="187.5" y="0.0" width="187.5" height="187.5"/>
                                                         <state key="normal" image="Serpiente"/>
                                                         <connections>
+                                                            <action selector="snapeButton:" destination="Xwo-V8-Ibs" eventType="touchUpInside" id="JsY-WL-3nf"/>
                                                             <segue destination="JQ9-pR-56a" kind="show" id="Zyh-i1-98t"/>
                                                         </connections>
                                                     </button>
@@ -263,6 +270,7 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="187.5" height="187.5"/>
                                                         <state key="normal" image="Cabra"/>
                                                         <connections>
+                                                            <action selector="goatButton:" destination="Xwo-V8-Ibs" eventType="touchUpInside" id="C4I-6Q-voj"/>
                                                             <segue destination="JQ9-pR-56a" kind="show" id="m5M-cr-MMM"/>
                                                         </connections>
                                                     </button>
@@ -270,6 +278,7 @@
                                                         <rect key="frame" x="187.5" y="0.0" width="187.5" height="187.5"/>
                                                         <state key="normal" image="Cerdo"/>
                                                         <connections>
+                                                            <action selector="pigButton:" destination="Xwo-V8-Ibs" eventType="touchUpInside" id="Ge6-tm-JJq"/>
                                                             <segue destination="JQ9-pR-56a" kind="show" id="nrb-QI-jda"/>
                                                         </connections>
                                                     </button>
@@ -285,6 +294,7 @@
                                                         </constraints>
                                                         <state key="normal" image="Dragon"/>
                                                         <connections>
+                                                            <action selector="dragontButton:" destination="Xwo-V8-Ibs" eventType="touchUpInside" id="qdf-42-Zax"/>
                                                             <segue destination="JQ9-pR-56a" kind="show" id="4lt-Fb-rMd"/>
                                                         </connections>
                                                     </button>
@@ -292,6 +302,7 @@
                                                         <rect key="frame" x="187.5" y="0.0" width="187.5" height="187.5"/>
                                                         <state key="normal" image="Gallo"/>
                                                         <connections>
+                                                            <action selector="roosterButton:" destination="Xwo-V8-Ibs" eventType="touchUpInside" id="noq-4a-FSy"/>
                                                             <segue destination="JQ9-pR-56a" kind="show" id="yWx-X0-l0N"/>
                                                         </connections>
                                                     </button>
@@ -304,6 +315,7 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="187.5" height="187.5"/>
                                                         <state key="normal" image="Liebre"/>
                                                         <connections>
+                                                            <action selector="hareButton:" destination="Xwo-V8-Ibs" eventType="touchUpInside" id="Bcx-5e-Zm7"/>
                                                             <segue destination="JQ9-pR-56a" kind="show" id="nFA-EH-Vus"/>
                                                         </connections>
                                                     </button>
@@ -311,6 +323,7 @@
                                                         <rect key="frame" x="187.5" y="0.0" width="187.5" height="187.5"/>
                                                         <state key="normal" image="Mono"/>
                                                         <connections>
+                                                            <action selector="monkeyButton:" destination="Xwo-V8-Ibs" eventType="touchUpInside" id="p92-jx-421"/>
                                                             <segue destination="JQ9-pR-56a" kind="show" id="s8W-SZ-uJ0"/>
                                                         </connections>
                                                     </button>
@@ -323,6 +336,7 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="187.5" height="187.5"/>
                                                         <state key="normal" image="Perro"/>
                                                         <connections>
+                                                            <action selector="dogButton:" destination="Xwo-V8-Ibs" eventType="touchUpInside" id="XKa-AB-Xro"/>
                                                             <segue destination="JQ9-pR-56a" kind="show" id="czn-33-p7D"/>
                                                         </connections>
                                                     </button>
@@ -330,6 +344,7 @@
                                                         <rect key="frame" x="187.5" y="0.0" width="187.5" height="187.5"/>
                                                         <state key="normal" image="Tigre"/>
                                                         <connections>
+                                                            <action selector="tigerButton:" destination="Xwo-V8-Ibs" eventType="touchUpInside" id="cBT-Uz-cTn"/>
                                                             <segue destination="JQ9-pR-56a" kind="show" id="ZRU-aF-qvx"/>
                                                         </connections>
                                                     </button>
@@ -361,6 +376,7 @@
                     <tabBarItem key="tabBarItem" title="" image="info.circle" catalog="system" landscapeImage="info.circle.fill" selectedImage="info" id="ftA-ST-DK8"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nkD-rx-XA7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="IZh-Wv-RZB" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="342" y="-675"/>
         </scene>
