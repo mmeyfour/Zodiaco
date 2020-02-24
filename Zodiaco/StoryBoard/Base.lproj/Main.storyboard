@@ -218,84 +218,120 @@
                                             <stackView opaque="NO" contentMode="scaleAspectFit" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Nev-gQ-B44">
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="187.5"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2cE-3M-Ubi">
+                                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2cE-3M-Ubi" userLabel="Buey">
                                                         <rect key="frame" x="0.0" y="0.0" width="187.5" height="187.5"/>
                                                         <state key="normal" image="Buey"/>
+                                                        <connections>
+                                                            <segue destination="JQ9-pR-56a" kind="show" id="OIs-J2-qKQ"/>
+                                                        </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uw7-ev-2ex">
+                                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uw7-ev-2ex" userLabel="Caballo">
                                                         <rect key="frame" x="187.5" y="0.0" width="187.5" height="187.5"/>
                                                         <state key="normal" image="Caballo"/>
+                                                        <connections>
+                                                            <segue destination="JQ9-pR-56a" kind="show" id="UIS-NO-L57"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleAspectFit" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="CrH-29-U2v">
                                                 <rect key="frame" x="0.0" y="187.5" width="375" height="187.5"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="99T-5D-wZj">
+                                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="99T-5D-wZj" userLabel="Rata">
                                                         <rect key="frame" x="0.0" y="0.0" width="187.5" height="187.5"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="99T-5D-wZj" secondAttribute="height" id="a97-7s-9IV"/>
                                                         </constraints>
                                                         <state key="normal" image="Rata"/>
+                                                        <connections>
+                                                            <segue destination="JQ9-pR-56a" kind="show" id="6vI-NR-9gS"/>
+                                                        </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0mP-fo-ZvM">
+                                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0mP-fo-ZvM" userLabel="Serpiente">
                                                         <rect key="frame" x="187.5" y="0.0" width="187.5" height="187.5"/>
                                                         <state key="normal" image="Serpiente"/>
+                                                        <connections>
+                                                            <segue destination="JQ9-pR-56a" kind="show" id="Zyh-i1-98t"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleAspectFit" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Hvd-6V-BBY">
                                                 <rect key="frame" x="0.0" y="375" width="375" height="187.5"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hQf-yV-09f">
+                                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hQf-yV-09f" userLabel="Cabra">
                                                         <rect key="frame" x="0.0" y="0.0" width="187.5" height="187.5"/>
                                                         <state key="normal" image="Cabra"/>
+                                                        <connections>
+                                                            <segue destination="JQ9-pR-56a" kind="show" id="m5M-cr-MMM"/>
+                                                        </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vO7-u9-DVb">
+                                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vO7-u9-DVb" userLabel="Cerdo">
                                                         <rect key="frame" x="187.5" y="0.0" width="187.5" height="187.5"/>
                                                         <state key="normal" image="Cerdo"/>
+                                                        <connections>
+                                                            <segue destination="JQ9-pR-56a" kind="show" id="nrb-QI-jda"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleAspectFit" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="mAF-i7-FRE">
                                                 <rect key="frame" x="0.0" y="562.5" width="375" height="187.5"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="haX-1R-uHZ">
+                                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="haX-1R-uHZ" userLabel="Dragon">
                                                         <rect key="frame" x="0.0" y="0.0" width="187.5" height="187.5"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="haX-1R-uHZ" secondAttribute="height" id="7yV-Rf-sEf"/>
                                                         </constraints>
-                                                        <state key="normal" image="Rata"/>
+                                                        <state key="normal" image="Dragon"/>
+                                                        <connections>
+                                                            <segue destination="JQ9-pR-56a" kind="show" id="4lt-Fb-rMd"/>
+                                                        </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l5O-eq-LI3">
+                                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l5O-eq-LI3" userLabel="Gallo">
                                                         <rect key="frame" x="187.5" y="0.0" width="187.5" height="187.5"/>
-                                                        <state key="normal" image="Serpiente"/>
+                                                        <state key="normal" image="Gallo"/>
+                                                        <connections>
+                                                            <segue destination="JQ9-pR-56a" kind="show" id="yWx-X0-l0N"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleAspectFit" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="BYS-CB-QXL">
                                                 <rect key="frame" x="0.0" y="750" width="375" height="187.5"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Yh-9G-rR5">
+                                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Yh-9G-rR5" userLabel="Liebre">
                                                         <rect key="frame" x="0.0" y="0.0" width="187.5" height="187.5"/>
-                                                        <state key="normal" image="Cabra"/>
+                                                        <state key="normal" image="Liebre"/>
+                                                        <connections>
+                                                            <segue destination="JQ9-pR-56a" kind="show" id="nFA-EH-Vus"/>
+                                                        </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="df0-K4-cZt">
+                                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="df0-K4-cZt" userLabel="Mono">
                                                         <rect key="frame" x="187.5" y="0.0" width="187.5" height="187.5"/>
-                                                        <state key="normal" image="Cerdo"/>
+                                                        <state key="normal" image="Mono"/>
+                                                        <connections>
+                                                            <segue destination="JQ9-pR-56a" kind="show" id="s8W-SZ-uJ0"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleAspectFit" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="1CE-VL-eBA">
                                                 <rect key="frame" x="0.0" y="937.5" width="375" height="187.5"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0de-iA-RV8">
+                                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0de-iA-RV8" userLabel="Perro">
                                                         <rect key="frame" x="0.0" y="0.0" width="187.5" height="187.5"/>
-                                                        <state key="normal" image="Buey"/>
+                                                        <state key="normal" image="Perro"/>
+                                                        <connections>
+                                                            <segue destination="JQ9-pR-56a" kind="show" id="czn-33-p7D"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xl0-GK-eE9">
                                                         <rect key="frame" x="187.5" y="0.0" width="187.5" height="187.5"/>
-                                                        <state key="normal" image="Caballo"/>
+                                                        <state key="normal" image="Tigre"/>
+                                                        <connections>
+                                                            <segue destination="JQ9-pR-56a" kind="show" id="ZRU-aF-qvx"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -326,7 +362,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nkD-rx-XA7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="342" y="-581"/>
+            <point key="canvasLocation" x="342" y="-675"/>
         </scene>
     </scenes>
     <resources>
@@ -334,8 +370,14 @@
         <image name="Caballo" width="1455" height="1450"/>
         <image name="Cabra" width="1463" height="1432"/>
         <image name="Cerdo" width="1461" height="1418"/>
+        <image name="Dragon" width="1638" height="1572"/>
+        <image name="Gallo" width="1445" height="1366"/>
+        <image name="Liebre" width="1465" height="1721"/>
+        <image name="Mono" width="1868" height="1710"/>
+        <image name="Perro" width="1486" height="1509"/>
         <image name="Rata" width="1301" height="1415"/>
         <image name="Serpiente" width="1395" height="1496"/>
+        <image name="Tigre" width="1717" height="1528"/>
         <image name="calendar" catalog="system" width="64" height="52"/>
         <image name="calendar.circle" catalog="system" width="64" height="60"/>
         <image name="calendar.circle.fill" catalog="system" width="64" height="60"/>
@@ -345,4 +387,7 @@
         <image name="info.circle" catalog="system" width="64" height="60"/>
         <image name="info.circle.fill" catalog="system" width="64" height="60"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="nrb-QI-jda"/>
+    </inferredMetricsTieBreakers>
 </document>

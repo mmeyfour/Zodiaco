@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		50415C642403137A00DA532A /* UserSignViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50415C632403137900DA532A /* UserSignViewController.swift */; };
+		50415C682403859900DA532A /* infoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50415C672403859900DA532A /* infoViewController.swift */; };
 		505C7B6D2402B40B0060A397 /* ZodiacViewLab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505C7B6C2402B40B0060A397 /* ZodiacViewLab.swift */; };
 		509F147D23FE77BF00BD8CFC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 509F147C23FE77BF00BD8CFC /* AppDelegate.swift */; };
 		509F147F23FE77BF00BD8CFC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 509F147E23FE77BF00BD8CFC /* SceneDelegate.swift */; };
@@ -19,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		50415C632403137900DA532A /* UserSignViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSignViewController.swift; sourceTree = "<group>"; };
+		50415C672403859900DA532A /* infoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = infoViewController.swift; sourceTree = "<group>"; };
 		505C7B6C2402B40B0060A397 /* ZodiacViewLab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZodiacViewLab.swift; sourceTree = "<group>"; };
 		509F147923FE77BF00BD8CFC /* Zodiaco.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Zodiaco.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		509F147C23FE77BF00BD8CFC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -65,6 +67,7 @@
 				509F148023FE77BF00BD8CFC /* ViewController.swift */,
 				505C7B6C2402B40B0060A397 /* ZodiacViewLab.swift */,
 				50415C632403137900DA532A /* UserSignViewController.swift */,
+				50415C672403859900DA532A /* infoViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -168,6 +171,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50415C682403859900DA532A /* infoViewController.swift in Sources */,
 				509F148123FE77BF00BD8CFC /* ViewController.swift in Sources */,
 				505C7B6D2402B40B0060A397 /* ZodiacViewLab.swift in Sources */,
 				509F147D23FE77BF00BD8CFC /* AppDelegate.swift in Sources */,
